@@ -25,7 +25,7 @@ export default defineConfig({
     lib: {
       entry: './src/widget-entry.jsx',   // widget entry
       name: 'TestBotWidget',
-      fileName: () => `widget.js`,
+      fileName: () => `docxplorer-widget.js`,
       formats: ['iife'], 
     },
     rollupOptions: {
