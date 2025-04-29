@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Widget</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 2em;
+    }
+
+    #chat-widget-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to DocXplorer AI Widget Test Page</h1>
+  <p>Click the button at the bottom right to open the chat widget.</p>
+
+<!-- Create a div where your widget will render -->
+<div id="chat-widget-container"></div>
+
+<!-- Include your chat widget -->
+<script src="/Users/sakthi.n/Documents/Clg/DocXplorer-Widget/dist/widget.js"></script>
+<link rel="stylesheet" href="/Users/sakthi.n/Documents/Clg/DocXplorer-Widget/dist/docxplorer-widget.css">
+
+
+<script>
+  window.initChatWidget({ elementId: 'chat-widget-container' });
+</script>
+
+</body>
+</html>
