@@ -52748,7 +52748,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
         summary_collection_name: "test_summary"
       };
       setInputMessage("");
-      fetch("http://0.0.0.0:8000/query-docs", {
+      fetch("https://docxplorer-ai.onrender.com/query-docs", {
         method: "POST",
         headers: {
           "Accept": "text/event-stream",

@@ -31,7 +31,7 @@ const TestBot = () => {
     setInputMessage('');
   
     // Start fetching
-    fetch("http://0.0.0.0:8000/query-docs", {
+    fetch("https://docxplorer-ai.onrender.com/query-docs", {
       method: 'POST',
       headers: {
         'Accept': 'text/event-stream',
