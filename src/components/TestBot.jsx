@@ -25,13 +25,12 @@ const TestBot = () => {
   
     const payload = {
       query: inputMessage,
-      collection_name: "test",
-      summary_collection_name: "test_summary"
+      user_email: "sakthinarayananr25@gmail.com"
     };
     setInputMessage('');
   
     // Start fetching
-    fetch("https://docxplorer-ai.onrender.com/query-docs", {
+    fetch("http://0.0.0.0:8000/query-docs", {
       method: 'POST',
       headers: {
         'Accept': 'text/event-stream',

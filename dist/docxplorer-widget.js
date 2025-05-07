@@ -52744,11 +52744,10 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
       setMessages((prevMessages) => [...prevMessages, { role: "user", content: inputMessage }, { role: "bot", content: "Thinking...", isloding: true }]);
       const payload = {
         query: inputMessage,
-        collection_name: "test",
-        summary_collection_name: "test_summary"
+        user_email: "sakthinarayananr25@gmail.com"
       };
       setInputMessage("");
-      fetch("https://docxplorer-ai.onrender.com/query-docs", {
+      fetch("http://0.0.0.0:8000/query-docs", {
         method: "POST",
         headers: {
           "Accept": "text/event-stream",
